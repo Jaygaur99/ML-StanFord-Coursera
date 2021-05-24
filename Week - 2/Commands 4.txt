@@ -1,0 +1,137 @@
+octave:5> v = zeros(10, 1)
+v =
+
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+
+octave:6> for i:10,
+error: parse error:
+
+  invalid left hand side of assignment
+
+>>> for i:10,
+            ^
+octave:6> for i:10
+error: parse error:
+
+  invalid left hand side of assignment
+
+>>> for i:10
+           ^
+octave:6> for i= 1:10,
+>               v(i) = 2^i;
+> end;
+octave:7> v
+v =
+
+      2
+      4
+      8
+     16
+     32
+     64
+    128
+    256
+    512
+   1024
+
+octave:8> i = 1;
+octave:9> while i <= 5,
+> v(i) = 100;
+> i = i+1;
+> end;
+octave:10> v
+v =
+
+    100
+    100
+    100
+    100
+    100
+     64
+    128
+    256
+    512
+   1024
+
+octave:11> while true,
+> v(i) = 999;
+> i = i+1;
+> break;
+> end;
+octave:12> % Upper was wrong
+octave:12> i = 1;
+octave:13> while true,
+> v(i) = 999;
+> i = i + 1;
+> if i == 6,
+>   break;
+> end;
+> end;
+octave:14> v
+v =
+
+    999
+    999
+    999
+    999
+    999
+    999
+    128
+    256
+    512
+   1024
+
+octave:15> pwd
+ans = G:\ML COURSERA\Week - 2
+octave:16> squareThisNumber(5)
+ans = 25
+octave:17> squareAndCubeThisNumber(2)
+ans = 4
+octave:18> x, y = squareAndCubeThisNumb
+er(2)
+error: 'x' undefined near line 1, column 1
+octave:19> [x, y] = squareAndCubeThisNu
+mber(2)
+x = 4
+y = 8
+octave:20> x = [1 1; 1 2; 1 3]
+x =
+
+   1   1
+   1   2
+   1   3
+
+octave:21> y = [ 1;2;3]
+y =
+
+   1
+   2
+   3
+
+octave:22> theta= [0;1]
+theta =
+
+   0
+   1
+
+octave:23> J = costFunction(x, y, theta
+)
+J = 0
+J = 0
+octave:24> theta = [0; 0];
+octave:25> J = costFunction(x, y, theta
+)
+J = 2.3333
+J = 2.3333
+octave:26> J = costFunction(x, y, theta
+);
+J = 2.3333

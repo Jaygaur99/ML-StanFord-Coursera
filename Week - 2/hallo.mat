@@ -1,0 +1,80 @@
+# Created by Octave 6.2.0, Sat May 15 21:20:58 2021 GMT <unknown@DESKTOP-Q90MRQH>
+# name: A
+# type: matrix
+# rows: 3
+# columns: 2
+ 1 2
+ 3 4
+ 5 6
+
+
+# name: V
+# type: matrix
+# rows: 1
+# columns: 4
+ 1 2 3 4
+
+
+# name: ans
+# type: matrix
+# rows: 1
+# columns: 2
+ 27 1
+
+
+# name: priceY
+# type: matrix
+# rows: 27
+# columns: 1
+ 3999
+ 3299
+ 3690
+ 2320
+ 5399
+ 2999
+ 3149
+ 1989
+ 2120
+ 2425
+ 2399
+ 3470
+ 3299
+ 6999
+ 2599
+ 4499
+ 1509
+ 1667
+ 5948
+ 4718
+ 3932
+ 2011
+ 4538
+ 2251
+ 2617
+ 4084
+ 3523
+
+
+# name: sz
+# type: matrix
+# rows: 1
+# columns: 2
+ 3 2
+
+
+# name: y
+# type: matrix
+# rows: 10
+# columns: 1
+ 3999
+ 3299
+ 3690
+ 2320
+ 5399
+ 2999
+ 3149
+ 1989
+ 2120
+ 2425
+
+
